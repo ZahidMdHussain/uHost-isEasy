@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main__sections{
+    height: 94vh;
+    padding: 3.25rem 11.12rem;
+    font-size: 3.25rem;
+    background: linear-gradient(to top,rgba(80,68,18,0.6) 20%,transparent), url('../img/freedom.jpg')right 10% top 15%/cover ,#ff1b68;
+    /* background-size: cover; */
+    color: rgb(20, 20, 20);;
+}
+.main__sections > p{
+    vertical-align: middle;
+}
+
+
+.secondry__main__sections{
+    text-align: center;
+}
+.secondry__main__sections > p{
+    color: #157830;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.plan__lists{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.plan{
+    background-color: #d5ffdc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    width: 20rem;
+    height: 28rem;
+    min-width: 11rem;
+    max-width: 22rem;
+}
+.plan__recommended{
+    background-color: #19b84c;
+    color:white;
+    height: 30rem;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+.plan__annotation{
+    background-color: white;
+    color:#19b84c;
+    padding: 0.62rem;
+    box-shadow: 2px 2px 2px 2px rgba(251, 252, 251, 0.5);
+    border-radius: 8px;
+}
+.plan__title{
+    color: #0e4f1f
+}
+.plan__price{
+    color: #858585;
+}
+.plan__recommended .plan__title{
+    color: whitesmoke
+}
+.plan__recommended .plan__price{
+    color: #0e4f1f;
+}
+.plan__features{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.plan__feature{
+    margin: 0.5rem;
+}
+
+.features__main__section > h1{
+    text-align: center;
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 2rem;
+}
+.features__main__section{
+    background-color: #ff1b68;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.features__items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.features__items li{
+    width: 30%;
+}
+.features__image{
+    width: 128px;
+    height: 128px;
+    background-color: white;
+    border: 2px solid #ffcede;
+    border-radius: 50%;
+    margin: 0 auto;
+   
+}
+
+.image-1{
+    background-image: url('../img/customer.jpg');
+    background-size: contain;
+    text-align: center;
+}
+
+.image-2{
+    background-image: url('../img/uptime.jpg');
+    background-size:contain;
+    text-align: center;
+}
+
+.image-3{
+    background-image: url('../img/fast-netwok.jpg');
+    background-size:contain;
+    text-align: center;
+}
+
+.features__items p{
+    text-align: center;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal {
+    position: fixed;
+    /* display: none; */
+    opacity: 0;
+    transform: translateY(-2rem);
+    transition: opacity 200ms ease-out, transform 500ms ease-out;
+    z-index: 200;
+    top: 25%;
+    left: 35%;
+    width: 30%;
+    min-width: 25%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .modal__actions {
+    text-align: center;
+  }
+  
+  .modal__action {
+    border: 1px solid #0e4f1f;
+    background: #0e4f1f;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .modal__action:hover,
+  .modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+  }
+  
+  .modal__action--negative {
+    background: red;
+    border-color: red;
+  }
+  
+  .modal__action--negative:hover,
+  .modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
+  }
+
+  @media (max-width:40rem){
+    .main__sections{
+        height: 40vh;
+        padding: 1.25rem 3.12rem;
+    }
+    
+    .main__sections > p{
+        vertical-align: middle;
+        font-size: 1.5rem;
+        margin-right:1rem ;
+        text-align: right;
+    }
+
+    .plan__lists{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .plan{
+        width: 100%; 
+        font-size: 1rem; 
+        max-width:none;
+        height:auto ;
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+    
+    .features__items{
+        display: block;
+    }
+    .features__items li{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .modal {
+        top: 25%;
+        left: 15%;
+        width: 70%;
+        min-width: 35%;
+      }
+    .modal__title {
+        font-size: 1.5rem;
+      }
+}
